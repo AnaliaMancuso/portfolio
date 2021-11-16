@@ -1,0 +1,48 @@
+/* body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: pink;
+  } */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+* {
+    margin:0;
+    padding: 0;
+}
+
+/* img {
+    border-radius: 50%;
+    width: 50%;
+} */
+.container {
+    max-width: 800px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 100px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "nav description image"
+      "cv cv cv"; 
+    border: 2px solid aqua;
+}
+nav {
+    grid-area: nav;
+}
+.description {
+    grid-area: description;
+}
+.image {
+    grid-area: image;
+}
+.cv {
+    grid-area: cv;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    overflow: hidden;
+    color: aliceblue;
+}
